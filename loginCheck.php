@@ -15,7 +15,7 @@ if(!empty($_POST['username']) && !empty($_POST['password'])){
 	if($count > 0){
 		echo "login succesfull";
 	}else{
-		// http_redirect();
+		echo "Username or Password incorrect";
 	}
 }
 
