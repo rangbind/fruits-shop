@@ -15,7 +15,7 @@ if(!empty($_POST['username']) && !empty($_POST['password'])){
 	if($count > 0){
 		echo "login succesfull";
 	}else{
-		echo "Username or Password incorrect";
+		echo "Username or Password incorrect for attempting user";
 	}
 }
 
