@@ -1,7 +1,7 @@
 <?php
 
 // Create connection
-$mysqli = new mysqli('127.0.0.1', 'Sulo', 'Sulo@123', 'collage');
+$mysqli = new mysqli('127.0.0.1', 'root', '', 'collage');
 
 // Check connection
 if($mysqli->connect_errno ) {

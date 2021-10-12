@@ -13,7 +13,4 @@
 	
 	print_r($dataArray);
 
-
-
-
  ?>
