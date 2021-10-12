@@ -1,5 +1,5 @@
 <?php
-include('connection.php');
+include('config/connection.php');
 
 if(!empty($_POST['username']) && !empty($_POST['password'])){
 	
