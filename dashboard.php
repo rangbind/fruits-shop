@@ -38,8 +38,8 @@
 			<tr>
 				<td><?php echo $value['id']; ?></td>
 				<td><?php echo $value['fruit_name']; ?></td>
-				<td><?php echo $value['Price']; ?></td>
-				<td><?php echo $value['Quantity']; ?></td>
+				<td><?php echo $value['price']; ?></td>
+				<td><?php echo $value['quantity']; ?></td>
 
 			</tr>
 			<?php	
