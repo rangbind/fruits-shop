@@ -7,8 +7,7 @@
 	$dataArray = [];
 	while ($row = mysqli_fetch_assoc($result)) {
 		$dataArray[] = $row;
-	}
-	
+	}	
 ?>
 <!DOCTYPE html>
 <html>
