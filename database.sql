@@ -1,3 +1,8 @@
+
+--create database
+create database fruit_shop
+
+--create fruit_master table
 CREATE TABLE `fruit_master` (
   `id` int NOT NULL AUTO_INCREMENT,
   `fruit_name` varchar(20) NOT NULL,

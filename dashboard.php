@@ -1,7 +1,7 @@
 <?php
 	include('config/connection.php');
 
-	$selectquery = "select * from electronics";
+	$selectquery = "select * from fruit_master";
 	$result = $mysqli->query($selectquery);
 
 	$dataArray = [];
