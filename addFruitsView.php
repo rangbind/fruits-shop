@@ -12,8 +12,22 @@
 	<form method="post" action="addFruits.php">
 		<center>
 			<label>Fruit Name:</label>
-			<input type="text" class="textbox" name="fruit_name" placeholder="Fruit Name" required="true"><br><br>			
-			<button class="login-btn" type="submit" name="submit">Submit</button>	
+			<input type="text" class="textbox" name="fruit_name" placeholder="Fruit Name" required="true">
+			<br><br>
+			
+			<label>Price:</label>
+			<input type="text" class="textbox" name="Price" placeholder="Price" required="true">
+			<br><br>
+
+			<label>Quantity:</label>		
+			<input type="text" class="textbox" name="Quantity" placeholder="Quantity" required="true">
+			<br><br>
+
+			<label>Owner:</label>		
+			<input type="text" class="textbox" name="owner" placeholder="Owner" required="true">
+			<br><br>
+
+			<button class="submit-btn" type="submit" name="submit">Submit</button>	
 		</center>
 	</form>
 </body>
