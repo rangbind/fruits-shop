@@ -25,10 +25,9 @@
 		<thead>
 			<tr>
 				<th>ID</th>
-				<th>fruit_name</th>
+				<th>Fruit Name</th>
 				<th>Price</th>
 				<th>Quantity</th>
-
 			</tr>
 		</thead>
 		<tbody>
@@ -40,7 +39,6 @@
 				<td><?php echo $value['fruit_name']; ?></td>
 				<td><?php echo $value['price']; ?></td>
 				<td><?php echo $value['quantity']; ?></td>
-
 			</tr>
 			<?php	
 			}

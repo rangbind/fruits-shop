@@ -1,14 +1,14 @@
 <?php
 include('config/connection.php');
 
-if(!empty($_POST['fruit_name']) && !empty($_POST['price']) && !empty($_POST['quantity'])){
+if(!empty($_POST['username']) && !empty($_POST['password'])){
 	
-	$username = $_POST['fruit_name'];
-	$password = $_POST['price'];
-	$password = $_POST['quantity'];
+	$username = $_POST['username'];
+	$password = $_POST['password'];
 
 
-	$selectQuery = "select * from fruit_master where fruit_name='$fruit_name' and price='$price' and quantity=$quantity";
+	$selectQuery = "select * from user where email='$username' and password='$password';";
+	
 	$result = $mysqli->query($selectQuery);
 	
 	$count = mysqli_num_rows($result);
@@ -16,7 +16,7 @@ if(!empty($_POST['fruit_name']) && !empty($_POST['price']) && !empty($_POST['qua
 	if($count > 0){
 		header("location:dashboard.php");
 	}else{
-		echo "wrong query";
+		echo "invailid username or password";
 	}
 }
 
