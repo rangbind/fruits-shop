@@ -1,30 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Home:Fruits-Shop</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
+<?php
+	include('header.php');
+?>
 
-<body>
-	<h3>Add</h3>
-	<form method="post" action="addFruits.php">
-		<center>
+<h3>Add Fruit</h3>
+<div class="row">
+	<div class="col-sm-6">
+		<form method="post" action="addFruits.php">	
 			<label>Fruit Name:</label>
-			<input type="text" class="textbox" name="fruit_name" placeholder="Fruit Name" required="true">
-			<br><br>
-			
+			<input type="text" class="form-control" name="fruit_name" placeholder="Fruit Name" required="true">	
+				
 			<label>Price:</label>
-			<input type="text" class="textbox" name="price" placeholder="Price" required="true">
-			<br><br>
+			<input type="text" class="form-control" name="price" placeholder="Price" required="true">
+			
 
 			<label>Quantity:</label>		
-			<input type="text" class="textbox" name="quantity" placeholder="Quantity" required="true">
-			<br><br>
+			<input type="text" class="form-control" name="quantity" placeholder="Quantity" required="true">
+			
+			<br>
+			<button class="btn btn-primary" type="submit" name="submit">Submit</button>
+			
+		</form>
+	</div>	
+</div>
 
-			<button class="submit-btn" type="submit" name="submit">Submit</button>
-		</center>
-	</form>
-</body>
-</html>
+
