@@ -10,7 +10,7 @@
 	}
 ?>
 <h3>Fruit List</h3>
-<table class="table table-hover" style="width: 50%">
+<table class="table table-hover" style="width: 80%">
 	<thead>
 		<tr>
 			<th>Id</th>
@@ -18,7 +18,9 @@
 			<th>Price</th>
 			<th>Quantity</th>
 			<th>Created At</th>
+			<th>Action</th>
 		</tr>
+
 	</thead>
 	<tbody>
 		
@@ -33,14 +35,14 @@
 			$quantity_sum = $quantity_sum + $value['quantity'];
 
 		?>
-		
-		
 		<tr>
 			<td><?php echo $value['id']; ?></td>
 			<td><?php echo $value['fruit_name']; ?></td>
 			<td><?php echo $value['price']; ?></td>
 			<td><?php echo $value['quantity']; ?></td>
 			<td><?php echo $value['created_at']; ?></td>
+	
+			<th> <a class="btn btn-outline-danger" href="deleteFruit.php" id="fruit_id"> delete </a></th>         <th <a class="btn btn-outline-danger" href="editFruit.php" id="fruit_id"> edit </th> 
 		</tr>
 
 		<?php	
@@ -53,7 +55,7 @@
 			<th> <?php echo count($dataArray); ?> </th>
 			<th> <?php echo $price_sum; ?> </th>
 			<th> <?php echo $quantity_sum; ?> </th>
-			<th></th>
+			
 		</tr>
 		
 		
