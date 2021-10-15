@@ -16,11 +16,11 @@
 			<br><br>
 			
 			<label>Price:</label>
-			<input type="text" class="textbox" name="Price" placeholder="Price" required="true">
+			<input type="text" class="textbox" name="price" placeholder="Price" required="true">
 			<br><br>
 
 			<label>Quantity:</label>		
-			<input type="text" class="textbox" name="Quantity" placeholder="Quantity" required="true">
+			<input type="text" class="textbox" name="quantity" placeholder="Quantity" required="true">
 			<br><br>
 
 			<button class="submit-btn" type="submit" name="submit">Submit</button>

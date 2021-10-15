@@ -51,7 +51,6 @@
 				<td><?php echo $value['price']; ?></td>
 				<td><?php echo $value['quantity']; ?></td>
 				<td><?php echo $value['created_at']; ?></td>
-				
 			</tr>
 
 			<?php	
