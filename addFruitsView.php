@@ -22,11 +22,6 @@
 			<label>Quantity:</label>		
 			<input type="text" class="textbox" name="Quantity" placeholder="Quantity" required="true">
 			<br><br>
-
-			<label>Owner:</label>		
-			<input type="text" class="textbox" name="owner" placeholder="Owner" required="true">
-			<br><br>
-
 			<button class="submit-btn" type="submit" name="submit">Submit</button>
 		</center>
 	</form>
