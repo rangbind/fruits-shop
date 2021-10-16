@@ -5,7 +5,7 @@
 <h3>Add Fruit</h3>
 <div class="row">
 	<div class="col-sm-6">
-		<form method="post" action="addFruits.php">	
+		<form method="post" action="addFruits.php">
 			<label>Fruit Name:</label>
 			<input type="text" class="form-control" name="fruit_name" placeholder="Fruit Name" required="true">	
 				

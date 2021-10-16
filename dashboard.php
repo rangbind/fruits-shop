@@ -43,7 +43,7 @@
 			<td><?php echo $value['created_at']; ?></td>
 	
 			<th> 
-				<a class="btn btn-outline-danger" href="deleteFruit.php" id="fruit_id"> delete </a> <a class="btn btn-primary" href="Editfruit.php" id="fruit_id"> edit </a>
+				<a class="btn btn-outline-danger" href="deleteFruit.php?fruit_id=<?php echo $value['id'];?>" id="fruit_id"> delete </a> <a class="btn btn-primary" href="editFruit.php?fruit_id=<?php echo $value['id'];?>" id="fruit_id"> edit </a>
 			</th> 
 			
 		</tr>
