@@ -42,12 +42,11 @@
 			<td><?php echo $value['quantity']; ?></td>
 			<td><?php echo $value['created_at']; ?></td>
 	
-			<th> <a class="btn btn-outline-danger" href="deleteFruit.php" id="fruit_id"> delete </a></th>         <th <a class="btn btn-outline-danger" href="editFruit.php" id="fruit_id"> edit </th> 
+			<th> <a class="btn btn-outline-danger" href="deleteFruit.php" id="fruit_id"> delete </a></th> <th> <a class="btn btn-primary" href="Editfruit.php" id="fruit_id"> edit </th> 
 		</tr>
 
 		<?php	
 		}
-
 		?>
 
 		<tr>
@@ -57,7 +56,5 @@
 			<th> <?php echo $quantity_sum; ?> </th>
 			
 		</tr>
-		
-		
 	</tbody>
 </table>
