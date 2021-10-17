@@ -10,7 +10,7 @@ if(!empty($_GET['fruit_id'])){
 	$result = $mysqli->query($selectQuery);
 
 	$dataArray = [];
-	while ($row = mysqli_fetch_assoc($result)) {
+	while ($row = mysqli_fetch_assoc ($result)) {
 		$dataArray[] = $row;
 	}
 	
@@ -21,7 +21,7 @@ if(!empty($_GET['fruit_id'])){
 	<h3>Edit Fruit</h3>
 <div class="row">
 	<div class="col-sm-6">
-		<form method="post" action="editFruit.php">
+		<form method="post" action="editfruit.php">
 			<input type="hidden" name="fruit_id" value="<?php echo $fruit_id;?>">
 			<label>Fruit Name:</label>
 			<input value="<?php echo $dataArray[0]['fruit_name'] ?>" type="text" class="form-control" name="fruit_name" placeholder="Fruit Name" required="true" readonly="true">	
