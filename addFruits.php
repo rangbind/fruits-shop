@@ -7,6 +7,7 @@ if(!empty($_POST['fruit_name']) && !empty($_POST['price']) && !empty($_POST['qua
 	$price = $_POST['price'];
 	$quantity = $_POST['quantity'];
 
+
 	//select where fruit_name = fruit name 
 	$selectQuery = "INSERT INTO fruit_master(fruit_name, price, quantity) values('$fruit_name', '$price', '$quantity')";
 	
@@ -19,7 +20,7 @@ if(!empty($_POST['fruit_name']) && !empty($_POST['price']) && !empty($_POST['qua
 		echo "wrong query";
 	}
 }else{
-	echo "dont get data";
+	//echo "dont get data";
 }
 
 ?>
