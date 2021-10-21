@@ -13,13 +13,13 @@ if(!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['email']) 
 
 
 	//select where fruit_name = fruit name 
-	$selectQuery = "INSERT INTO registration_page(name, phone, email, address, password, confirmed_password) values('$name', '$phone', '$email', '$address', '$password', '$confirmed_password')";
+	$selectQuery = "INSERT INTO Registration_page(name, phone, email, address, password, confirmed_password) values('$name', '$phone', '$email', '$address', '$password', '$confirmed_password')";
 	
 	$result = $mysqli->query($selectQuery);
 	$insert_id = $mysqli->insert_id;
 
 	if($insert_id>0){
-		header("location:dashboard.php");
+		header("location:create_Accountview.php");
 	}else{
 		echo "wrong query";
 	}
