@@ -44,7 +44,7 @@
 			<td><?php echo $value['created_at']; ?></td>
 			<td><?php echo $value['Action']; ?></td>
 
-			<th><a class="btn btn-outline-danger">  delete </a></th> <th><a class="btn btn-primary"> Edit </a></th> 
+			<th><a class="btn btn-outline-danger" href="deleteAccount.php?account_id=<?php echo $value['id'];?>" id="account_id">  delete </a></th> <th><a class="btn btn-primary" href="editAccountview.php?account_id=<?php echo $value['id'];?>" id="account_id"> Edit </a></th> 
 			
 		</tr>
 
