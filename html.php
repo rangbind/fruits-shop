@@ -3,6 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<title> html tags practice </title>
+
+	<style>
+	body{
+
+		background-color: lightpink;
+	}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="favicon/style.css">
+
+	<script>
+
+		alert("hello");
+
+	</script>
+
 </head>
 
 <body>
@@ -17,24 +33,109 @@
 	excessive land-tax and discrimination. Assuming leadership of the Indian National Congress in 1921, Gandhi led nationwide campaigns for easing poverty, expanding women's rights, building religious and ethnic amity, ending untouchability, and above all for achieving swaraj or self-rule.[9]</p>
 
 	
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/_FNOyXl15MI?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-
-	<br><br><br>
-	<br><br><br>
-	&#8508;
-	<br><br><br>
 	
-	&#128516;
+
+	
+	<select >
+		<optgroup label="car"> 
+		<option value="car"> BMW </option>
+		<option value="car"> honda </option>
+		<option value="car"> maruti </option>
+		<option value="car"> activa </option>
+		</optgroup>
+
+		<optgroup label="foods">
+		<option value="car"> milk </option>
+		<option value="car"> fruits </option>
+		<option value="car"> maggy </option>
+		<option value="car"> pasta </option>
+		</optgroup>
+
+
+	</select>
+	<br><br>
+
+	<h3><form> 
+		<input type="radio" name="Gender" value="male"> Male
+		<input type="radio" name="Gender" value="Female"> Female
+		<input type="radio" name="Gender" value="other"> Other
+		<br><br>
+		<input type="radio" name="emptype" value="manager"> manager
+		<input type="radio" name="emptype" value="developer"> developer
+
+
+	</form></h3>
+	<br><br><br>
+
+	<h3><form> 
+		<input type="Checkbox" name="sports"> cricket
+		<input type="Checkbox" name="sports"> football
+		<input type="Checkbox" name="sports"> hockey
+		
+
+	</form></h3>
+	<br><br><br>
+
+	<b><form>
+		search <input type="text" list="search">
+		<datalist id="search">
+			<option value="apple">
+			<option value="mango">
+			<option value="orange">
+			<option value="car">
+
+		</datalist>
+		<input type="submit" name="search">
+	</form></b>
+	<br><br><br><br><br><br>
+
+
+	<b><form>
+		<fieldset>
+			<legend> basic information </legend>
+			<label for="fname"> first name </label>
+			<input type="text" name="first_name" id="fname">
+			<label for="lname"> last name </label>
+			<input type="text" name="last_name" id="lname">
+		</fieldset>
+
+		<fieldset>
+			<legend> others information </legend>
+			<label for="address"> Address </label>
+			<input type="text" name="address" id="address">
+			<label for="mobile"> mobile no </label>
+			<input type="text" name="mobile" id="mobile">
+		</fieldset>
+
+		<fieldset>
+			<input type="submit">
+		</fieldset>
+	</form></b>
+
+				
+			
 
 
 
-	<h3> end </h3>
 
 
-	<form enctype="multipart/form-data"> 
 
-		<input type="file" multiple="true">
-	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
