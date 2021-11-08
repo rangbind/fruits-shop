@@ -44,11 +44,7 @@
 			<td><?php echo $value['created_at']; ?></td>
 			<td><?php echo $value['Action']; ?></td>
 
-
-	
-			<!--<th> 
-				<a class="btn btn-outline-danger" href="deleteFruit.php?fruit_id=<?php echo $value['id'];?>" id="fruit_id"> delete </a> <a class="btn btn-primary" href="editfruitview.php?fruit_id=<?php echo $value['id'];?>" id="fruit_id"> edit </a>
-			</th>--> 
+			<th><a class="btn btn-outline-danger">  delete </a></th> <th><a class="btn btn-primary"> Edit </a></th> 
 			
 		</tr>
 
@@ -59,13 +55,6 @@
 		<tr>
 			<th> <?php echo "total"; ?> </th>
 			<th> <?php echo count($dataArray); ?> </th>
-			
-			
-
-
-			
-
-
 			
 		</tr>
 	</tbody>

@@ -27,9 +27,7 @@
 			<input type="textbox" class="form-control" name="confirmed_password" placeholder="confirmed_password" required="true"><br>
 			
 			<button class="btn btn-primary" type="submit" name="submit"> <b> Submit </b> </button>
-			<button class="btn btn-primary" type="cencel" name="cencel"> <b> cencel </b> </button>
-
-			
+				
 		</form>
 	</div>	
 </div>
