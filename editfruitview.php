@@ -5,7 +5,6 @@ if(!empty($_GET['fruit_id'])){
 	
 	 $fruit_id = $_GET['fruit_id'];
 	
-}
 	$selectQuery = "SELECT * FROM fruit_master WHERE id=$fruit_id";
 	$result = $mysqli->query($selectQuery);
 
@@ -14,7 +13,7 @@ if(!empty($_GET['fruit_id'])){
 		$dataArray[] = $row;
 	}
 	
-
+}
 	
 ?>
 

@@ -4,15 +4,15 @@
 	
 ?>
 
-<h3> Login Here </h3><br>
+<h3> addAccount </h3><br>
 <div class="row">
 	<div class="col-sm-6">
-		<form method="post" action="server.php">
+		<form method="post" action="addAccount.php">
 			<label> <b>Name:</b></label>
 			<input type="textbox" class="form-control" name="name" placeholder="name" required="true"><br>
 				
 			<label> <b>Phone No:</b></label>		
-			<input type="textbox" class="form-control" name="phone" placeholder="phone" required="true"><br>
+			<input type="textbox" class="form-control" name="phone_no" placeholder="phone_no" required="true"><br>
 			
 			<label> <b>Email:</b></label>
 			<input type="textbox" class="form-control" name="email" placeholder="email" required="true"><br>
