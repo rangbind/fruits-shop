@@ -15,7 +15,7 @@ CREATE TABLE `fruit_master` (
 
 
 
-CREATE TABLE `Registration_page` (
+CREATE TABLE `registration_page` (
   `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(20) DEFAULT NULL,
   `phone_no` varchar(10) DEFAULT NULL,

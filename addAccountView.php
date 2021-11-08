@@ -1,7 +1,5 @@
-<?php
-	
-	include('header.php');
-	
+<?php	
+	include('header.php');	
 ?>
 
 <h3> addAccount </h3><br>

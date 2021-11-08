@@ -42,9 +42,9 @@
 			<td><?php echo $value['quantity']; ?></td>
 			<td><?php echo $value['created_at']; ?></td>
 	
-			<th> 
+			<td> 
 				<a class="btn btn-outline-danger" href="deleteFruit.php?fruit_id=<?php echo $value['id'];?>" id="fruit_id"> delete </a> <a class="btn btn-primary" href="editfruitview.php?fruit_id=<?php echo $value['id'];?>" id="fruit_id"> edit </a>
-			</th> 
+			</td> 
 			
 		</tr>
 
@@ -57,7 +57,8 @@
 			<th> <?php echo count($dataArray); ?> </th>
 			<th> <?php echo $price_sum; ?> </th>
 			<th> <?php echo $quantity_sum; ?> </th>
-			
+			<th></th>
+			<th></th>
 		</tr>
 	</tbody>
 </table>
