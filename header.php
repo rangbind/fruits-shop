@@ -30,7 +30,7 @@
 		        <a class="nav-link" href= "accountList.php">Accounts</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="AddAccountView.php">Add Account</a>
+		        <a class="nav-link" href="addAccountView.php">Add Account</a>
 		      </li>
 		    </ul>
 		    <form class="form-inline my-2 my-lg-0">
