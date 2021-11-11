@@ -29,11 +29,9 @@ if(!empty($_POST['name']) && !empty($_POST['phone_no']) && !empty($_POST['email'
 	//3: else register user
 
 
-<<<<<<< HEAD
+
 	$selectQuery = "INSERT INTO user (name, phone_no, email, address, password, confirmed_password,role) VALUES('$name', '$phone_no', '$email', '$address', '$password', '$confirmed_password','$role')";
-=======
-	$selectQuery = "INSERT INTO user (names, phone, email, address, password) VALUES('$name', '$phone_no', '$email', '$address', '$password')";
->>>>>>> a9efc950802196cdda3d7e8b8aa863519b055d2d
+
 	
 	$result = $mysqli->query($selectQuery);
 	$insert_id = $mysqli->insert_id;

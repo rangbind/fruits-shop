@@ -44,15 +44,12 @@
 			<td><?php echo $value['address']; ?></td>
 			<td><?php echo $value['password']; ?></td>
 			<td><?php echo $value['created_at']; ?></td>
-<<<<<<< HEAD
 			<td><?php echo $value['Action']; ?></td>
 			<td><?php echo $value['role']; ?></td>
 
-=======
->>>>>>> a9efc950802196cdda3d7e8b8aa863519b055d2d
 
-			<td><a class="btn btn-outline-danger" href="deleteAccount.php?account_id=<?php echo $value['id'];?>" id="account_id">  delete </a>
-				<a class="btn btn-primary" href="editAccountview.php?account_id=<?php echo $value['id'];?>" id="account_id"> Edit </a></td> 
+			<td><a class="btn btn-outline-danger" href="deleteAccount.php?account_id=<?php echo $value['id'];?>" id="account_id">delete </a></td>
+			<td><a class="btn btn-primary" href="editAccountview.php?account_id=<?php echo $value['id'];?>" id="account_id"> Edit </a></td> 
 			
 		</tr>
 
@@ -69,6 +66,8 @@
 			<th></th>
 			<th></th>
 			<th></th>
+			<th></th>
+
 			
 		</tr>
 	</tbody>
