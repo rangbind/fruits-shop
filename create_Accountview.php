@@ -1,8 +1,10 @@
-<?php	
-	include('header.php');	
+<?php
+	
+	include('header.php');
+	
 ?>
 
-<h3> add Account </h3><br>
+<h3> addAccount </h3><br>
 <div class="row">
 	<div class="col-sm-6">
 		<form method="post" action="addAccount.php">

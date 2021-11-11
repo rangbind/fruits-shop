@@ -1,7 +1,7 @@
 <?php
 	include('header.php');
 
-	$selectquery = "select * from Registration_page";
+	$selectquery = "select * from user";
 	$result = $mysqli->query($selectquery);
 
 	$dataArray = [];
@@ -22,7 +22,9 @@
 			<th>Address </th>
 			<th>Password</th>
 			<th>Created At</th>
+			<th>Role</th>
 			<th>Action</th>
+
 
 		</tr>
 
@@ -43,6 +45,8 @@
 			<td><?php echo $value['password']; ?></td>
 			<td><?php echo $value['created_at']; ?></td>
 			<td><?php echo $value['Action']; ?></td>
+			<td><?php echo $value['role']; ?></td>
+
 
 			<td><a class="btn btn-outline-danger" href="deleteAccount.php?account_id=<?php echo $value['id'];?>" id="account_id">  delete </a></th> <th><a class="btn btn-primary" href="editAccountview.php?account_id=<?php echo $value['id'];?>" id="account_id"> Edit </a></td> 
 			
@@ -61,6 +65,7 @@
 			<th></th>
 			<th></th>
 			<th></th>
+			
 		</tr>
 	</tbody>
 </table>

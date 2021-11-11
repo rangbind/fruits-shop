@@ -9,12 +9,14 @@ if(!empty($_POST['name']) && !empty($_POST['phone_no']) && !empty($_POST['email'
 	$address = $_POST['address'];
 	$password = $_POST['password'];
 	$confirmed_password = $_POST['confirmed_password'];
+	$role = $_POST['role'];
+
 
 
 
 	//select where fruit_name = fruit name 
 
-	$selectQuery = "INSERT INTO Registration_page (name, phone_no, email, address, password, confirmed_password) VALUES('$name', '$phone_no', '$email', '$address', '$password', '$confirmed_password')";
+	$selectQuery = "INSERT INTO user (name, phone_no, email, address, password, confirmed_password,role) VALUES('$name', '$phone_no', '$email', '$address', '$password', '$confirmed_password','$role')";
 	
 	$result = $mysqli->query($selectQuery);
 	$insert_id = $mysqli->insert_id;
