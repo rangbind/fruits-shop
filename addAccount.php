@@ -1,7 +1,7 @@
 <?php 
 include('config/connection.php');
 
-if(!empty($_POST['name']) && !empty($_POST['phone_no']) && !empty($_POST['email']) && !empty($_POST['address']) && !empty($_POST['password']) && !empty($_POST['confirmed_password'])){
+if(!empty($_POST['name']) && !empty($_POST['phone_no']) && !empty($_POST['email']) && !empty($_POST['address']) && !empty($_POST['password']) && !empty($_POST['confirmed_password']) && !empty($_POST['role'])){
 	
 	$name = $_POST['name'];
 	$phone_no = $_POST['phone_no'];
