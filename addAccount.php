@@ -11,15 +11,27 @@ if(!empty($_POST['name']) && !empty($_POST['phone_no']) && !empty($_POST['email'
 	$confirmed_password = $_POST['confirmed_password'];
 
 
+	if($password != $confirmed_password){
+		echo "Password and confirm password should be same";
+		exit;
+	}
 
-	//select where fruit_name = fruit name 
+	if($user != $user){
+		echo "Check allready existing user";
+		exit;
+	}
 
-	$selectQuery = "INSERT INTO Registration_page (name, phone_no, email, address, password, confirmed_password) VALUES('$name', '$phone_no', '$email', '$address', '$password', '$confirmed_password')";
+	//check already acount available or not
+	//1: select record from user table where email id is comming id
+	//2: check if record found return error with user already exists
+	//3: else register user
+
+
+	$selectQuery = "INSERT INTO user (names, phone, email, address, password) VALUES('$name', '$phone_no', '$email', '$address', '$password')";
 	
 	$result = $mysqli->query($selectQuery);
 	$insert_id = $mysqli->insert_id;
 
-	echo($result);
 	if($insert_id > 0){
 		header("location:accountList.php");
 
