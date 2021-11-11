@@ -16,10 +16,10 @@ if(!empty($_POST['name']) && !empty($_POST['phone_no']) && !empty($_POST['email'
 		exit;
 	}
 
-	if($user != $user){
+	/*if($user != $user){
 		echo "Check allready existing user";
 		exit;
-	}
+	}*/
 
 	//check already acount available or not
 	//1: select record from user table where email id is comming id
