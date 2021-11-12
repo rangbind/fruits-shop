@@ -5,7 +5,7 @@ if(!empty($_GET['account_id'])){
 	
 	 $account_id = $_GET['account_id'];
 	
-	$selectQuery = "SELECT * FROM Registration_page WHERE id=$account_id";
+	$selectQuery = "SELECT * FROM user WHERE id=$account_id";
 	$result = $mysqli->query($selectQuery);
 
 	$dataArray = [];
