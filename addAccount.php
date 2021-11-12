@@ -1,19 +1,18 @@
 <?php 
 include('config/connection.php');
 
-if(!empty($_POST['name']) && !empty($_POST['phone_no']) && !empty($_POST['email']) && !empty($_POST['address']) && !empty($_POST['password']) && !empty($_POST['confirmed_password']) && !empty($_POST['role'])){
+if(!empty($_POST['name']) && !empty($_POST['phone_no']) && !empty($_POST['email']) && !empty($_POST['address']) && !empty($_POST['password']) && !empty($_POST['role'])){
 	
 	$name = $_POST['name'];
 	$phone_no = $_POST['phone_no'];
 	$email = $_POST['email'];
 	$address = $_POST['address'];
 	$password = $_POST['password'];
-	$confirmed_password = $_POST['confirmed_password'];
 	$role = $_POST['role'];
 
 
 
-	if($password != $confirmed_password){
+	/*if($password != $confirmed_password){
 		echo "Password and confirm password should be same";
 		exit;
 	}
@@ -21,7 +20,7 @@ if(!empty($_POST['name']) && !empty($_POST['phone_no']) && !empty($_POST['email'
 	if($user != $user){
 		echo "Check allready existing user";
 		exit;
-	}
+	}*/
 
 	//check already acount available or not
 	//1: select record from user table where email id is comming id
@@ -30,7 +29,7 @@ if(!empty($_POST['name']) && !empty($_POST['phone_no']) && !empty($_POST['email'
 
 
 
-	$selectQuery = "INSERT INTO user (name, phone_no, email, address, password, confirmed_password,role) VALUES('$name', '$phone_no', '$email', '$address', '$password', '$confirmed_password','$role')";
+	$selectQuery = "INSERT INTO user (name, phone_no, email, address, password,role) VALUES('$name', '$phone_no', '$email', '$address', '$password','$role')";
 
 	
 	$result = $mysqli->query($selectQuery);
