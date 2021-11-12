@@ -35,13 +35,10 @@ if(!empty($_GET['account_id'])){
 			<input value="<?php echo $dataArray[0]['email'] ?>" type="text" class="form-control" name="email" placeholder="email" required="true">
 
 			<label>Address:</label>		
-			<input value="<?php echo $dataArray[0]['address'] ?>" type="text" class="form-control" name="address" placeholder="address" required="true">
+			<input value="<?php echo $dataArray[0]['Address'] ?>" type="text" class="form-control" name="address" placeholder="address" required="true">
 
 			<label>Password:</label>		
 			<input value="<?php echo $dataArray[0]['password'] ?>" type="text" class="form-control" name="password" placeholder="password" required="true">
- 			
- 			<label> Confirm Password:</label>		
-			<input value="<?php echo $dataArray[0]['confirmed_password'] ?>" type="text" class="form-control" name="confirmed_password" placeholder="confirmed_password" required="true">
 
 			<label> Role:</label>		
 			<input value="<?php echo $dataArray[0]['role'] ?>" type="text" class="form-control" name="role" placeholder="role" required="true">
