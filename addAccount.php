@@ -10,6 +10,7 @@ if(!empty($_POST['names']) && !empty($_POST['phone']) && !empty($_POST['email'])
 	$email = $_POST['email'];
 	$address = $_POST['address'];
 	$password = $_POST['password'];
+	$confirmed_password = $_POST['confirm_password'];
 	$role = $_POST['role'];
 
 
