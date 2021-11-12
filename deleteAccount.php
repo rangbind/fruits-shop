@@ -7,7 +7,7 @@ if(!empty($_GET['account_id'])){
 	
 	//echo $fruit_id;
 
-	$selectQuery = "DELETE FROM Registration_page WHERE id='$account_id'";
+	$selectQuery = "DELETE FROM user WHERE id='$account_id'";
 	$result = $mysqli->query($selectQuery);
 
 	if($result){

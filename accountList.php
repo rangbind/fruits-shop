@@ -16,7 +16,7 @@
 	<thead>
 		<tr>
 			<th>Id</th>
-			<th>Name</th>
+			<th>Names</th>
 			<th>Phone</th>
 			<th>Email</th>
 			<th>Address </th>
@@ -44,13 +44,10 @@
 			<td><?php echo $value['address']; ?></td>
 			<td><?php echo $value['password']; ?></td>
 			<td><?php echo $value['created_at']; ?></td>
-			<td><?php echo $value['Action']; ?></td>
 			<td><?php echo $value['role']; ?></td>
-
-
-			<td><a class="btn btn-outline-danger" href="deleteAccount.php?account_id=<?php echo $value['id'];?>" id="account_id">delete </a></td>
-			<td><a class="btn btn-primary" href="editAccountview.php?account_id=<?php echo $value['id'];?>" id="account_id"> Edit </a></td> 
-			
+			<td>
+				<a class="btn btn-outline-danger" href="deleteAccount.php?account_id=<?php echo $value['id'];?>" id="account_id">  delete </a><a class="btn btn-primary" href="editAccountview.php?account_id=<?php echo $value['id'];?>" id="account_id"> Edit </a>
+			</td>			
 		</tr>
 
 		<?php	

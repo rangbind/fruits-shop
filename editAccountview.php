@@ -13,7 +13,8 @@ if(!empty($_GET['account_id'])){
 
 		$dataArray[] = $row;
 	}
-
+	/*echo "<pre>";
+	print_r($dataArray);*/
 }
 	
 ?>
@@ -24,10 +25,10 @@ if(!empty($_GET['account_id'])){
 		<form method="post" action="editAccount.php">
 			<input type="hidden" name="account_id" value="<?php echo $account_id;?>">
 			<label>Name:</label>
-			<input value="<?php echo $dataArray[0]['name'] ?>" type="text" class="form-control" name="name" placeholder="name" required="true" readonly="true">	
+			<input value="<?php echo $dataArray[0]['names'] ?>" type="text" class="form-control" name="name" placeholder="name" required="true" readonly="true">	
 				
 			<label>Phone No:</label>
-			<input value="<?php echo $dataArray[0]['phone_no'] ?>" type="text" class="form-control" name="phone_no" placeholder="phone_no" required="true"> 
+			<input value="<?php echo $dataArray[0]['phone'] ?>" type="text" class="form-control" name="phone_no" placeholder="phone_no" required="true"> 
 			
 
 			<label>Email:</label>		

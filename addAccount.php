@@ -1,10 +1,10 @@
 <?php 
 include('config/connection.php');
 
-if(!empty($_POST['name']) && !empty($_POST['phone_no']) && !empty($_POST['email']) && !empty($_POST['address']) && !empty($_POST['password']) && !empty($_POST['confirmed_password']) && !empty($_POST['role'])){
+if(!empty($_POST['names']) && !empty($_POST['phone']) && !empty($_POST['email']) && !empty($_POST['address']) && !empty($_POST['password']) && !empty($_POST['confirmed_password']) && !empty($_POST['role'])){
 	
-	$name = $_POST['name'];
-	$phone_no = $_POST['phone_no'];
+	$names = $_POST['names'];
+	$phone = $_POST['phone'];
 	$email = $_POST['email'];
 	$address = $_POST['address'];
 	$password = $_POST['password'];
@@ -18,20 +18,17 @@ if(!empty($_POST['name']) && !empty($_POST['phone_no']) && !empty($_POST['email'
 		exit;
 	}
 
-	/*if($user != $user){
+	if($user != $user){
 		echo "Check allready existing user";
 		exit;
-	}*/
+	}
 
 	//check already acount available or not
 	//1: select record from user table where email id is comming id
 	//2: check if record found return error with user already exists
 	//3: else register user
 
-
-
-	$selectQuery = "INSERT INTO user (name, phone_no, email, address, password, confirmed_password,role) VALUES('$name', '$phone_no', '$email', '$address', '$password', '$confirmed_password','$role')";
-
+	$selectQuery = "INSERT INTO user (names, phone, email, address, password, confirmed_password,role) VALUES('$names', '$phone', '$email', '$address', '$password', '$confirmed_password','$role')";
 	
 	$result = $mysqli->query($selectQuery);
 	$insert_id = $mysqli->insert_id;
