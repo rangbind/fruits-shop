@@ -38,13 +38,13 @@
 		?>
 		<tr>
 			<td><?php echo $value['id']; ?></td>
-			<td><?php echo $value['name']; ?></td>
-			<td><?php echo $value['phone_no']; ?></td>
+			<td><?php echo $value['names']; ?></td>
+			<td><?php echo $value['phone']; ?></td>
 			<td><?php echo $value['email']; ?></td>
-			<td><?php echo $value['Address']; ?></td>
+			<td><?php echo $value['address']; ?></td>
 			<td><?php echo $value['password']; ?></td>
 			<td><?php echo $value['created_at']; ?></td>
-			<td><?php echo $value['role']; ?></td>
+			<td><?php echo $value['Role']; ?></td>
 			<td>
 				<a class="btn btn-outline-danger" href="deleteAccount.php?account_id=<?php echo $value['id'];?>" id="account_id">  delete </a><a class="btn btn-primary" href="editAccountview.php?account_id=<?php echo $value['id'];?>" id="account_id"> Edit </a>
 			</td>			

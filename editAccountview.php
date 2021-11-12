@@ -25,17 +25,17 @@ if(!empty($_GET['account_id'])){
 		<form method="post" action="editAccount.php">
 			<input type="hidden" name="account_id" value="<?php echo $account_id;?>">
 			<label>Name:</label>
-			<input value="<?php echo $dataArray[0]['names'] ?>" type="text" class="form-control" name="name" placeholder="name" required="true" readonly="true">	
+			<input value="<?php echo $dataArray[0]['names'] ?>" type="text" class="form-control" name="names" placeholder="names" required="true" readonly="true">	
 				
 			<label>Phone No:</label>
-			<input value="<?php echo $dataArray[0]['phone'] ?>" type="text" class="form-control" name="phone_no" placeholder="phone_no" required="true"> 
+			<input value="<?php echo $dataArray[0]['phone'] ?>" type="text" class="form-control" name="phone" placeholder="phone" required="true"> 
 			
 
 			<label>Email:</label>		
 			<input value="<?php echo $dataArray[0]['email'] ?>" type="text" class="form-control" name="email" placeholder="email" required="true">
 
 			<label>Address:</label>		
-			<input value="<?php echo $dataArray[0]['Address'] ?>" type="text" class="form-control" name="address" placeholder="address" required="true">
+			<input value="<?php echo $dataArray[0]['address'] ?>" type="text" class="form-control" name="address" placeholder="address" required="true">
 
 			<label>Password:</label>		
 			<input value="<?php echo $dataArray[0]['password'] ?>" type="text" class="form-control" name="password" placeholder="password" required="true">

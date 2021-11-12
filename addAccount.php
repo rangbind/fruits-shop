@@ -17,9 +17,9 @@ if(!empty($_POST['names']) && !empty($_POST['phone']) && !empty($_POST['email'])
 	/*if($password != $confirmed_password){
 		echo "Password and confirm password should be same";
 		exit;
-	}
+	}*/
 
-	if($user != $user){
+	/*if($user != $user){
 		echo "Check allready existing user";
 		exit;
 	}*/
@@ -28,7 +28,7 @@ if(!empty($_POST['names']) && !empty($_POST['phone']) && !empty($_POST['email'])
 	//1: select record from user table where email id is comming id
 	//2: check if record found return error with user already exists
 	//3: else register user
-	
+
 	$selectQuery = "INSERT INTO user (names, phone, email, address, password, confirmed_password,role) VALUES('$names', '$phone', '$email', '$address', '$password', '$confirmed_password','$role')";
 
 	
