@@ -2,7 +2,7 @@
 include('config/connection.php');
 
 
-if(!empty($_POST['names']) && !empty($_POST['phone']) && !empty($_POST['email']) && !empty($_POST['address']) && !empty($_POST['password']) && !empty($_POST['confirmed_password']) && !empty($_POST['role'])){
+if(!empty($_POST['names']) && !empty($_POST['phone']) && !empty($_POST['email']) && !empty($_POST['address']) && !empty($_POST['password']) && !empty($_POST['role'])){
 
 	
 	$names = $_POST['names'];
@@ -10,7 +10,7 @@ if(!empty($_POST['names']) && !empty($_POST['phone']) && !empty($_POST['email'])
 	$email = $_POST['email'];
 	$address = $_POST['address'];
 	$password = $_POST['password'];
-	$confirmed_password = $_POST['confirm_password'];
+	//$confirmed_password = $_POST['confirm_password'];
 	$role = $_POST['role'];
 
 
@@ -18,9 +18,9 @@ if(!empty($_POST['names']) && !empty($_POST['phone']) && !empty($_POST['email'])
 	/*if($password != $confirmed_password){
 		echo "Password and confirm password should be same";
 		exit;
-	}
+	}*/
 
-	if($user != $user){
+	/*if($user != $user){
 		echo "Check allready existing user";
 		exit;
 	}*/
@@ -30,7 +30,7 @@ if(!empty($_POST['names']) && !empty($_POST['phone']) && !empty($_POST['email'])
 	//2: check if record found return error with user already exists
 	//3: else register user
 	
-	$selectQuery = "INSERT INTO user (names, phone, email, address, password, confirmed_password,role) VALUES('$names', '$phone', '$email', '$address', '$password', '$confirmed_password','$role')";
+	$selectQuery = "INSERT INTO user (names, phone, email, address, password, role) VALUES('$names', '$phone', '$email', '$address', '$password','$role')";
 
 	
 	$result = $mysqli->query($selectQuery);

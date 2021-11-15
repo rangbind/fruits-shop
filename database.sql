@@ -59,6 +59,19 @@ CREATE TABLE `registration_page` (
 
 
 
+  vijay ka table
+  user  | CREATE TABLE `user` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `names` varchar(20) DEFAULT NULL,
+  `phone` varchar(10) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `password` varchar(10) DEFAULT NULL,
+  `address` varchar(80) DEFAULT NULL,
+  `role` int DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `last_updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
 
 
 

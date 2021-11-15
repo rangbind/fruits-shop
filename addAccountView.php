@@ -21,6 +21,9 @@
 			<label> <b>Password:</b></label>
 			<input type="password" class="form-control" name="password" placeholder="password" required="true"><br>
 
+			<label> <b>confirmed_password:</b></label>
+			<input type="confirmed_password" class="form-control" name="confirmed_password" placeholder="confirmed_password" required="true"><br>
+
 			<label> <b>Role:</b></label>
 			<input type="textbox" class="form-control" name="role" placeholder="Role" required="true"><br>
 

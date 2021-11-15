@@ -38,10 +38,10 @@
 		?>
 		<tr>
 			<td><?php echo $value['id']; ?></td>
-			<td><?php echo $value['name']; ?></td>
-			<td><?php echo $value['phone_no']; ?></td>
+			<td><?php echo $value['names']; ?></td>
+			<td><?php echo $value['phone']; ?></td>
 			<td><?php echo $value['email']; ?></td>
-			<td><?php echo $value['Address']; ?></td>
+			<td><?php echo $value['address']; ?></td>
 			<td><?php echo $value['password']; ?></td>
 			<td><?php echo $value['created_at']; ?></td>
 			<td><?php echo $value['role']; ?></td>
