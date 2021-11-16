@@ -12,11 +12,8 @@
 	$email = $_POST['email'];
 	$address = $_POST['Address'];
 	$password = $_POST['password'];
-	$Role = $_POST['role'];
 
-	
-
-	$selectQuery = "UPDATE user SET phone_no='$phone_no', email='$email', Address='$address', password='$password', role='$Role' WHERE id='$account_id'";
+	$selectQuery = "UPDATE user SET phone_no='$phone_no', email='$email', Address='$address', password='$password' WHERE id='$account_id'";
 	
 	$result = $mysqli->query($selectQuery);
 	

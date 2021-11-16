@@ -29,7 +29,7 @@ if(!empty($_POST['names']) && !empty($_POST['phone']) && !empty($_POST['email'])
 	//2: check if record found return error with user already exists
 	//3: else register user
 
-	$selectQuery = "INSERT INTO user (names, phone, email, address, password, confirmed_password,role) VALUES('$names', '$phone', '$email', '$address', '$password', '$confirmed_password','$role')";
+	$selectQuery = "INSERT INTO user (names, phone, email, address, password) VALUES('$names', '$phone', '$email', '$address', '$password')";
 
 	
 	$result = $mysqli->query($selectQuery);

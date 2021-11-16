@@ -40,10 +40,6 @@ if(!empty($_GET['account_id'])){
 			<label>Password:</label>		
 			<input value="<?php echo $dataArray[0]['password'] ?>" type="text" class="form-control" name="password" placeholder="password" required="true">
 
-			<label> Role:</label>		
-			<input value="<?php echo $dataArray[0]['role'] ?>" type="text" class="form-control" name="role" placeholder="role" required="true">
-
-
 			<br>
 			<button class="btn btn-primary" type="submit" name="submit">Submit</button>
 			

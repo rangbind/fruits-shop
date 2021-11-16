@@ -1,5 +1,11 @@
 <?php
 	include('config/connection.php');
+	session_start();
+	//check if user is logged in or not
+	if(empty($_SESSION['user_id'])){
+		header("Location:index.php");
+	}
+	//if user not logged in redirect to login page | index.php
 ?>	
 
 <!DOCTYPE html>
@@ -34,7 +40,7 @@
 		      </li>
 		    </ul>
 		    <form class="form-inline my-2 my-lg-0">
-		      <a class="btn btn-outline-danger my-2 my-sm-0" href="index.php">Logout</a>
+		      <a class="btn btn-outline-danger my-2 my-sm-0" href="logout.php">Logout</a>
 		    </form>
 		  </div>
 		</nav>
