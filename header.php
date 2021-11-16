@@ -27,13 +27,13 @@
 		    <a class="navbar-brand">Fruit Shop</a>
 		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="dashboard.php">Home</a>
+		        <a class="nav-link" href="dashboard.php">Fruit List</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="addFruitsView.php">Add Fruit</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href= "accountList.php">Accounts</a>
+		        <a class="nav-link" href= "accountList.php">Accounts List</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="addAccountView.php">Add Account</a>
