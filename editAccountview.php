@@ -25,17 +25,11 @@ if(!empty($_GET['account_id'])){
 		<form method="post" action="editAccount.php">
 			<input type="hidden" name="account_id" value="<?php echo $account_id;?>">
 			<label>Name:</label>
-<<<<<<< Updated upstream
-			<input value="<?php echo $dataArray[0]['names'] ?>" type="text" class="form-control" name="names" placeholder="names" required="true" readonly="true">	
-				
-			<label>Phone No:</label>
-			<input value="<?php echo $dataArray[0]['phone'] ?>" type="text" class="form-control" name="phone" placeholder="phone" required="true"> 
-=======
+			
 			<input value="<?php echo $dataArray[0]['names'] ?>" type="text" class="form-control" name="name" placeholder="name" required="true" readonly="true">	
 				
 			<label>Phone No:</label>
 			<input value="<?php echo $dataArray[0]['phone'] ?>" type="text" class="form-control" name="phone_no" placeholder="phone_no" required="true"> 
->>>>>>> Stashed changes
 			
 
 			<label>Email:</label>		

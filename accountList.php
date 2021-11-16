@@ -46,19 +46,9 @@
 			<td><?php echo $value['created_at']; ?></td>
 			<td><?php echo $value['role']; ?></td>
 			<td>
-				<a class="btn btn-outline-danger" href="deleteAccount.php?account_id=<?php echo $value['id'];?>" id="account_id">  delete </a></td>
-				<td>
-				<a class="btn btn-primary" href="editAccountview.php?account_id=<?php echo $value['id'];?>" id="account_id"> Edit </a>
-			</td>			
-
-<<<<<<< Updated upstream
-=======
-
-			<td>
 				<a class="btn btn-outline-danger" href="deleteAccount.php?account_id=<?php echo $value['id'];?>" id="account_id">  delete </a><a class="btn btn-primary" href="editAccountview.php?account_id=<?php echo $value['id'];?>" id="account_id"> Edit </a>
 			</td> 
 			
->>>>>>> Stashed changes
 		</tr>
 
 		<?php	
@@ -75,14 +65,6 @@
 			<th></th>
 			<th></th>
 			<th></th>
-<<<<<<< Updated upstream
-			
-			
-			
-=======
->>>>>>> Stashed changes
-
-			
 		</tr>
 	</tbody>
 </table>
