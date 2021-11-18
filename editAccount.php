@@ -2,8 +2,6 @@
 
 	include('config/connection.php');
 
-
-
 	if(!empty($_POST['account_id'])){
 	
 	$account_id = $_POST['account_id'];
