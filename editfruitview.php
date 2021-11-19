@@ -21,6 +21,7 @@ if(!empty($_GET['fruit_id'])){
 <div class="row">
 	<div class="col-sm-6">
 		<form method="post" action="editfruit.php" enctype="multipart/form-data">
+
 			<input type="hidden" name="fruit_id" value="<?php echo $fruit_id;?>">
 			<label>Fruit Name:</label>
 			<input value="<?php echo $dataArray[0]['fruit_name'] ?>" type="text" class="form-control" name="fruit_name" placeholder="Fruit Name" required="true" readonly="true">	
@@ -34,7 +35,6 @@ if(!empty($_GET['fruit_id'])){
 			
 			<label>Image:</label>		
 			<input type="file" class="form-control" name="image" placeholder="image" required="true">
-
 			<br>
 			<button class="btn btn-primary" type="submit" name="submit">Submit</button>
 			
