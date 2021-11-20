@@ -22,7 +22,7 @@
 			<th>Address </th>
 			<th>Password</th>
 			<th>Created At</th>
-			<th>Role</th>
+			<th>Image</th>
 			<th>Action</th>
 
 
@@ -44,7 +44,7 @@
 			<td><?php echo $value['address']; ?></td>
 			<td><?php echo $value['password']; ?></td>
 			<td><?php echo $value['created_at']; ?></td>
-			<td><?php echo $value['role']; ?></td>
+			<td><?php echo $value['image']; ?></td>
 			<td>
 				<a class="btn btn-outline-danger" href="deleteAccount.php?account_id=<?php echo $value['id'];?>" id="account_id">  delete </a><a class="btn btn-primary" href="editAccountview.php?account_id=<?php echo $value['id'];?>" id="account_id"> Edit </a>
 			</td> 

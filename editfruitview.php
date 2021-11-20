@@ -29,12 +29,13 @@ if(!empty($_GET['fruit_id'])){
 			<label>Price:</label>
 			<input value="<?php echo $dataArray[0]['price'] ?>" type="text" class="form-control" name="price" placeholder="Price" required="true"> 
 			
-
 			<label>Quantity:</label>		
 			<input value="<?php echo $dataArray[0]['quantity'] ?>" type="text" class="form-control" name="quantity" placeholder="Quantity" required="true">
 			
-			<label>Image:</label>		
+			<label>Image:</label>
+			<input  type="text" name="image" >		
 			<input type="file" class="form-control" name="image" placeholder="image" required="true">
+
 			<br>
 			<button class="btn btn-primary" type="submit" name="submit">Submit</button>
 			
