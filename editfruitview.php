@@ -31,10 +31,10 @@ if(!empty($_GET['fruit_id'])){
 			
 			<label>Quantity:</label>		
 			<input value="<?php echo $dataArray[0]['quantity'] ?>" type="text" class="form-control" name="quantity" placeholder="Quantity" required="true">
-			
+			<br>
+			<img class="form-control" style="width:30%" src="<?php echo "pics/".$dataArray[0]['image']; ?>" width="80px">
 			<label>Image:</label>
-			<input  type="text" name="image" >		
-			<input type="file" class="form-control" name="image" placeholder="image" required="true">
+			<input value="<?php echo $dataArray[0]['image'] ?>" type="file" name="image" class="form-control" placeholder="image" required="true">
 
 			<br>
 			<button class="btn btn-primary" type="submit" name="submit">Submit</button>
