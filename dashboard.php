@@ -43,8 +43,6 @@
 			<td><?php echo $value['quantity']; ?></td>
 			<td><img src="<?php echo "pics/".$value['image']; ?>" width="80px"> </td>
 			<td><?php echo $value['created_at']; ?></td>
-			<td>
-					
 			<td> 
 				<a class="btn btn-outline-danger" href="deleteFruit.php?fruit_id=<?php echo $value['id'];?>" id="fruit_id"> delete </a> <a class="btn btn-primary" href="editfruitview.php?fruit_id=<?php echo $value['id'];?>" id="fruit_id"> edit </a>
 			</td> 
