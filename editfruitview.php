@@ -34,7 +34,7 @@ if(!empty($_GET['fruit_id'])){
 			<br>
 			<img class="form-control" style="width:30%" src="<?php echo "pics/".$dataArray[0]['image']; ?>" width="80px">
 			<label>Image:</label>
-			<input value="<?php echo $dataArray[0]['image'] ?>" type="file" name="image" class="form-control" placeholder="image" required="true">
+			<input value="<?php echo $dataArray[0]['image'] ?>" type="file" name="image" class="form-control" placeholder="image">
 
 			<br>
 			<button class="btn btn-primary" type="submit" name="submit">Submit</button>
