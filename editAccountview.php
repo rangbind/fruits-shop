@@ -22,7 +22,8 @@ if(!empty($_GET['account_id'])){
 	<h3>Edit Account</h3>
 <div class="row">
 	<div class="col-sm-6">
-		<form method="post" action="editAccount.php">
+		<form method="post" action="editfruit.php" enctype="multipart/form-data">
+
 			<input type="hidden" name="account_id" value="<?php echo $account_id;?>">
 			<label>Name:</label>
 			
@@ -44,8 +45,9 @@ if(!empty($_GET['account_id'])){
 			<label>Confirm Password:</label>		
 			<input value="" type="text" class="form-control" name="confirmed_password" placeholder="confirmed_password" required="true">
 
-			<label> Role:</label>		
-			<input value="<?php echo $dataArray[0]['role'] ?>" type="text" class="form-control" name="role" placeholder="role" required="true">
+			<label>Image:</label>
+			<input  type="text" name="image" >		
+			<input type="file" class="form-control" name="image" placeholder="image" required="true">
 
 			<br>
 			<button class="btn btn-primary" type="submit" name="submit">Submit</button>

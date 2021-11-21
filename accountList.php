@@ -43,6 +43,7 @@
 			<td><?php echo $value['email']; ?></td>
 			<td><?php echo $value['address']; ?></td>
 			<td><?php echo $value['password']; ?></td>
+			<td><img src="<?php echo "pics/".$value['image']; ?>" width="80px"> </td>
 			<td><?php echo $value['created_at']; ?></td>
 			<td><?php echo $value['image']; ?></td>
 			<td>
