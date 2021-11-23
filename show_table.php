@@ -1,6 +1,6 @@
 <?php 
 	
-	/*include('config/connection.php');
+	include('config/connection.php');
 
 	$selectquery = "select * from fruit_master";
 	$result = $mysqli-> query($selectquery);
@@ -11,7 +11,7 @@
 		$dataArray[] = $row;
 	}
 	
-	print_r($dataArray);*/
+	print_r($dataArray);
 
 
 

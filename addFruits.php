@@ -26,8 +26,6 @@ if(!empty($_POST['fruit_name']) && !empty($_POST['price']) && !empty($_POST['qua
 		$isUploaded = move_uploaded_file($file_tmp,"pics/".$file_name_new);
 		//End of moving file
 
-		//echo "<img src='$file_name_new' height='100' width='100'/>";
-
 		//select where fruit_name = fruit name 
 		$selectQuery = "INSERT INTO fruit_master(fruit_name, price, quantity, image) values('$fruit_name', '$price', '$quantity', '$file_name_new')";
 		

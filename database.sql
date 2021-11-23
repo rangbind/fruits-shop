@@ -81,9 +81,19 @@ ALTER TABLE `user` CHANGE `role` `role` TINYINT(11) NULL DEFAULT '1';
 ALTER TABLE `fruit_master` ADD `image` VARCHAR(250) NOT NULL AFTER `quantity`;
 
 
+/*
+  1)what is add to cart
+  2)technology
+  3)project file structure
+  4)database and table creating
+  5)connect database
+  6)display item from database
+  7)add to cart items
+  8)get total number of items in cart
+  9)display item in cart
+  10)detete specific items in cart
+  11)detete all items in cart
+  12)UPDATE items qty in cart
+  13)checkout items
 
-
-
-
-
-
+*/
