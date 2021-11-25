@@ -1,32 +1,34 @@
-<?php 
+<?php
 	include '../config/connection.php';
+	include '../config/tokenWork.php';
 
-	$request = json_decode(file_get_contents('php://input'), 1);
-
+	$request =  getRequestData();
+	
 	if(!empty($request['username']) && !empty($request['password'])){
 	
 		$username = $request['username'];
 		$password = $request['password'];
 
-
-
 		$selectQuery = "select * from user where email='$username' and password='$password';";
 		
 		$result = $mysqli->query($selectQuery);
-		$row = mysqli_fetch_array($result);
-		
+		$raw = mysqli_fetch_assoc($result);
 		$count = mysqli_num_rows($result);
+		$id = $raw['id'];
 
 		$responseArray = [];
 		if($count > 0){
-			$responseArray = ['status'=>200,'token'=>md5($request['username'])];
+			$token = encrypt(json_encode($raw), $key);
+			//set token
+			$up = "UPDATE user SET token = '$token' where id='$id'";
+			$mysqli->query($up);
+
+			sendResponse(200, ['token'=>$token]);
 		}else{
-			$responseArray = ['status'=>401,'message'=>'Invailid username or password'];
+			sendResponse(401, ['message'=>'Invailid username or password']);
 		}
 	}else{
-		$responseArray = ['status'=>422,'message'=>'Please provide username and password'];
+		sendResponse(422, ['message'=>'Please provide username and password']);
 	}
-
-	echo json_encode($responseArray);
 
 ?>
