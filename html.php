@@ -118,12 +118,7 @@
 </html>
 
 	
-
-
-
-
-
-<<html>
+<html>
 <head>
 <title>Student Registration Form</title>
 
@@ -448,10 +443,14 @@ B.A
  
 </form>
  
-</body>
+</body>	
 </html>
-<br><br><br><br><br><br>
-<br>
+ 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ 
+
+**********************************************************************************************************************************************************************************************************************************
+ 
 
 <!DOCTYPE html>
 <html>
@@ -460,15 +459,37 @@ B.A
 	<title></title>
 
 	<h3> new project </h3>
+	<style type="text/css">
+
+	p{
+
+		color:blue;
+	}
+
+	#p3{
+
+		color: red;
+	}
 
 
+
+
+</style>
 
 
 
 </head>
 <body>
 
+	<h1> heading </h1>
+	
+	<p> paragraph 1 </p>
+	<p> paragraph 2 </p>
+	<p id="p3"> paragraph 3 </p>
+	<p> paragraph 4 </p>
+	<p> paragraph 5 </p>
 
+	 
 
 
 

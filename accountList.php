@@ -7,7 +7,9 @@
 	$dataArray = [];
 	while ($row = mysqli_fetch_assoc($result)) {
 		$dataArray[] = $row;
+
 	}
+	
 ?>
 
 <h3>Account List</h3>
