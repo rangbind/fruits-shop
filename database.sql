@@ -97,3 +97,43 @@ ALTER TABLE `fruit_master` ADD `image` VARCHAR(250) NOT NULL AFTER `quantity`;
   13)checkout items
 
 */
+
+
+<?php  
+$key = 'fruit-shop';
+
+//Encrypt Function
+function encrypt($plainText, $key) {
+    $secretKey = md5($key);
+    $iv = substr( hash( 'sha256', "aaaabbbbcccccddddeweee" ), 0, 16 );
+    $encryptedText = openssl_encrypt($plainText, 'AES-128-CBC', $secretKey, OPENSSL_RAW_DATA, $iv);
+    return base64_encode($encryptedText);
+}
+
+//Decrypt Function
+function decrypt($encryptedText, $key) {
+    $key = md5($key);
+    $iv = substr( hash( 'sha256', "aaaabbbbcccccddddeweee" ), 0, 16 );
+    $decryptedText = openssl_decrypt(base64_decode($encryptedText), 'AES-128-CBC', $key, OPENSSL_RAW_DATA, $iv);
+    return $decryptedText;
+}
+
+//send response 
+function sendResponse($status = 200, $data = [])
+{
+    header("Content-Type: text/json");
+    http_response_code($status);
+    echo json_encode($data);
+    exit;
+}
+
+//get request data
+$request = json_decode(file_get_contents('php://input'), 1);
+
+function getRequestData()
+{
+    return $GLOBALS['request'];
+}
+
+ 
+?>
